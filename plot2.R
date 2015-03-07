@@ -1,0 +1,5 @@
+source("getPowerConsumptionData.R")
+getPowerConsumptionData()
+png("plot2.png")
+plot(as.POSIXlt(power_consumption$Date),  power_consumption$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
+dev.off()

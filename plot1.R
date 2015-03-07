@@ -1,0 +1,5 @@
+source("getPowerConsumptionData.R")
+getPowerConsumptionData()
+png("plot1.png")
+hist(power_consumption$Global_active_power, breaks=12, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
+dev.off()
